@@ -17,5 +17,3 @@ void loop()
 
   delay(1000);
 }
-
-// https://github.com/bda-talos/Hot-Plate.git
