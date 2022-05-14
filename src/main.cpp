@@ -1,25 +1,15 @@
 #include <Arduino.h>
-#include <avr/io.h>
 
 void setup()
 {
-  PORTA.DIR = PIN_PA4;
+  PORTA.DIR = 0b01000000;
 }
 
 void loop()
 {
 
-  digitalWrite(PIN_PA4, HIGH);
+  PORTA.OUT = 0b01000000;
   delay(500);
-  digitalWrite(PIN_PA4, LOW);
+  PORTA.OUT = 0b00000000;
   delay(500);
 }
-/*
-  PORTA.OUT = 00001000;
-
-  delay(1000);
-
-  PORTA.OUT = 00000000;
-
-  delay(1000);
-*/
