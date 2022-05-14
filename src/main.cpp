@@ -13,3 +13,5 @@ void loop()
   PORTA.OUT = 0b00000000;
   delay(500);
 }
+
+// digitalWrite(PIN_PA6, HIGH);
